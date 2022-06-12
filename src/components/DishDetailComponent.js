@@ -14,22 +14,6 @@ class DishDetail extends Component {
         this.setState({ comments: comments });
     }
 
-    renderComments(comments) {
-        if (comments != null) {
-            return (
-                <ul key={comments.id} className="list-unstyled">
-                    <li className="comment">{comments.comment}</li>
-                    <li className="author">{comments.author}</li>
-                    <li className="date">{comments.date}</li>
-                </ul>
-            )
-        }
-        else {
-            return (
-                <div></div>
-            ); 
-        }
-    }
 
     renderDish(dish) {
     if (dish != null) {
